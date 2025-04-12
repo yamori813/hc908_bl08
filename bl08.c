@@ -108,7 +108,7 @@ int dumpSize=0;
 char* dumpFormat="hex";
 int eraseFlash=0;
 int verify=0;
-int baudRate=B14400;
+int baudRate=B9600;
 char* executeCode=NULL;
 int pageErase=0;
 int uploadOnly=0;
@@ -1193,7 +1193,7 @@ int main(int argc, char *argv[]) {
 	// default values
 	setCPUtype("gz16");
 	CPUSPEED=8; 
-	baudRate=14400;
+	baudRate=9600;
 	
 	parseArgs(argc,argv);
 

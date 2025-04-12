@@ -50,6 +50,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 // for example Mac OS X Tiger does not have this header, OTOH I think
 // that <sys/ictl.h> is not POSIX either so how do you write
 // actual POSIX compliant code that compiles cleanly on POSIX...
+#include <termios.h>
 extern int ioctl (int filedes, int command, ...);
 // End of hack
 #endif

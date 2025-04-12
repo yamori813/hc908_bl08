@@ -45,12 +45,14 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 #include <signal.h>
 #include <sys/wait.h>
 
+#ifdef LINUX
 // Terrible hack here because POSIX says 'ioctl()' is in <stropts.h> but
 // for example Mac OS X Tiger does not have this header, OTOH I think
 // that <sys/ictl.h> is not POSIX either so how do you write
 // actual POSIX compliant code that compiles cleanly on POSIX...
-//extern int ioctl (int filedes, int command, ...);
+extern int ioctl (int filedes, int command, ...);
 // End of hack
+#endif
 	
 
  

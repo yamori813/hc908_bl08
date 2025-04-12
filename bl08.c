@@ -52,6 +52,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 // that <sys/ictl.h> is not POSIX either so how do you write
 // actual POSIX compliant code that compiles cleanly on POSIX...
 #include <asm/termbits.h>  /* Definition of TIOC* constants */
+#include <sys/ioctl.h>
 extern int ioctl (int filedes, int command, ...);
 // End of hack
 #endif
